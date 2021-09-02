@@ -4,13 +4,21 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2021/09/02/test/"/>
-      <url>/2021/09/02/test/</url>
+      <title>DP-oVML</title>
+      <link href="/2021/09/02/DP-oVML/"/>
+      <url>/2021/09/02/DP-oVML/</url>
       
-        <content type="html"><![CDATA[<p>this is a test</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="20210901"><a href="#20210901" class="headerlink" title="20210901"></a>20210901</h2><h3 id="做了什么？"><a href="#做了什么？" class="headerlink" title="做了什么？"></a>做了什么？</h3><p>实现了dp-linear regression</p><h3 id="接下来需要做什么"><a href="#接下来需要做什么" class="headerlink" title="接下来需要做什么"></a>接下来需要做什么</h3><ol><li>给数据添加噪声</li><li>找师哥商讨如何跑完一整个实验.</li></ol>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> FL </tag>
+            
+            <tag> DP </tag>
+            
+        </tags>
       
     </entry>
     
