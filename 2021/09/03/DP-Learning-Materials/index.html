@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DP Learning Materials | Mangata Blog</title><meta name="keywords" content="DP"><meta name="author" content="rm-rf /*"><meta name="copyright" content="rm-rf /*"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DP Learning Materials">
+<meta property="og:url" content="http://mangata.tulip.academy/2021/09/03/DP-Learning-Materials/index.html">
+<meta property="og:site_name" content="Mangata Blog">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://mangata.tulip.academy/img/back/12.jpg">
+<meta property="article:published_time" content="2021-09-03T02:11:32.000Z">
+<meta property="article:modified_time" content="2021-09-03T02:18:31.213Z">
+<meta property="article:author" content="rm-rf &#x2F;*">
+<meta property="article:tag" content="DP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://mangata.tulip.academy/img/back/12.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://mangata.tulip.academy/2021/09/03/DP-Learning-Materials/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-09-03 10:18:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> MessageBoard</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/back/12.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Mangata Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> MessageBoard</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">DP Learning Materials</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-03T02:11:32.000Z" title="发表于 2021-09-03 10:11:32">2021-09-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-03T02:18:31.213Z" title="更新于 2021-09-03 10:18:31">2021-09-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="DP Learning Materials"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="48c7607a96f0b91c4be8849541c85f18640d7e4603c90f4db049d758d550c79d">32f6b5d546b45ddcb106f8057f4193e79e74b5eab13af8d672a5def84f33d56a584b09f3911b85850582f9e6db4e04015883af1075a5f30b9055090c3750837772ea3d51d07351de977324008307474aa0f9999670a43fdf70ab7958fc58796a82dc5006f4435b4b64d8787052d70a5bd94d7b10f616d1e9611146f8539ccf7b98c80a4d091088cb974bc61907556f61219f1a128e007684f4ed5fd5ef7e694d701a1cc81f83c8ab27790a5bc576a071ecb4de0a40550492119d29c0c7230beffc6b6f94300f2223bb69f77a1e81e51969bf5d3e17bf9d5a4928d1a53f7fb76a824c08b82e22fdfe82bc34d3a175a66eaf99d42cf5fb4b3bd7b05072e2c40240c3f25272086aa735a2fd13f0dafcfe7581db5743f7218fae00a8e2a796a37b00ebce27a56f57c2da71948cf0ece7e5ffcf1916c9ef1cab78ce05154e509000ba47254a6a1a47351a280deda0b6c9ccfe44d07099da05bbd712a15253458a7b412f38ff4aec96fab293f51023fb78109a328d6f47d46b649fd00e29cd18e0076b8de3b8773e0bf6f910a0d3ceead45d8e6addbe311f5395cb6f34df6b8d6c24df1bf1192d226b3ddbe61602d6fc20e2e42faed0bf97e9d1188b0e06d1773b9512b9f1687c40de2a559df10eeb4f716aadc3840150dc19a5af4061b88dd9996793c81cc62233d22811854b5fea7a65090a820ef0b8c9220d58ce9329e675c6585482877a925a880e53450f17ce93b64e7c255405e4b6c0e8b751384823714f3d78284c58dd2315321811d85e0c00bc568a8c434c520a622dddb0512befad8d14fcf4114ba9b11691aa5f7be47986d74128e0eaaf5c1cf8b4288dbfde332744c0924542d0d48a517c3f0f39b7c8e0965d5df0e2ed5d7c62a6caadadf871cbfd41b1601e3fb5ecae5db13fc58035de882a322114938fba166eebfaf7b67fecf352bab46d3006dff08321c9c961ec8c0f7b37465f9d270312eeadb665f4e1ceaed1824b8004c21eba23c4ec9a93a76bc65cfc799b37e32e070b02bc99db9d4a9723190912129e66e4bf6df0c16db08015516e91fe0755a619f3cf5249f46754ce8967b83da24df9bf0ab634ed84b2bb476e2f826928b24728d43aaf96ed48d8e1a16f7ec3e5de2bd21fc96708882cb40c4ef78fbf2b078f8b07f343d21bc033eb1cfa551aa575c7c3130e506123f590b0cd4d2394cf95905ab6f288d4b89088ef60f3e7be041d9d1ac9c10e0ef00921203fad3ada6b83f6b9449e78f084087f4274196271dd0bb9ff2aedeff2bc4a89246ff403c162936a72b88181a9755dc25f4483b6f88cf50149cc96e6ad16f4d334c73d149dc4f13403cbd2afa2787a9e0e53e2dc981adf0f519f0aaeaebe7524e8ddf60b4cb6437d30319346f4b054a6e883461e9135bf8fa8897c88a8055c051b8fdaf02cd56f061b825d16693126232278bcf3c99fdeddca28c39fce9cf045f6b2c715eb04e4bb073ebc67ff2c2bec8ec5e85b9cc9d2498b8bb1aff49a4b29209f370ba1b63b5e68ebda0bec44a43ca5ed2f582dd4d231e78a164fef4efc02ccda6955b83cd22c73be8af89c670cec7566d57238e8dea19a4ccd136e76c394edda979555a47253cac40c91e7dceb159c35197b9b7757260c3969175420d590e5647cdb457181272d7e7aa58a644d2bf94b69c88b3667ba40819bc3b4563466e1c424de8f8b79842ac3f20b12246dea7baee19836937fe6bd55aba2b0638feac2ee6d18f0c902a455f4bce375904cf22703fa2586c828c7ee4246e4cb0b5ab0993cbcf3ed089ac5cfb6e72564a64cfec885a8dfd865d6749d9c0c831c1089e1021e4c8f0532e8ec282b443f500350cd9a4800784075e2baa01f4b3925636987dbe646bdbcf51858b5d1858135514969834ca2410eecd9fcfb8975b6eda16d9f3c347ab637a191974743fb68c401c8f44b011bf83c4f86d9e901ade9729de92ff3c755a3d0eb98657f01ee12db7a2de1fe32b48ca9e25861163df5e5dd2f808b0867aad0695879124ec9f1dba6ae91138a7bfc3a4a39ba8d6ab9641e4dfba1e907b6a6c477a6abaa8ada4451faadb7ec32784822b0c316c03c21aad773cd39905a0ab9dbdd854d0921a1ffd8ad2663d1ca35ecfaad300556dd2a69705f1404ad163fb6c60d26c46f860e87567cdd16f56da0de8c37f3c716bd647c0cbe1e42f8b0b458edd38bb8191f7d13630e7544fc8287197bb41ec3c3e7c31ad550c3e61b961850edfa44c9c9972e10eae8a3e4e77ba1f17f439f2b7a96280c719386d9d2262ed407bc38a408f91f0d7e96593813f238a74e97b00e3569727a340a8a2f36b3e0ca1f6198490e191142b21d64d8f43e57ad1b7203555b4b648540c1ee2570dfc908e1b9367a6fbc0dfa2281ef306a1837990f37e4c0a550846f27ed24cfba6d40bc7a8ad7e0591cb0423199fc9de3a00ab3</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">rm-rf /*</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://mangata.tulip.academy/2021/09/03/DP-Learning-Materials/">http://mangata.tulip.academy/2021/09/03/DP-Learning-Materials/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://Mangata.tulip.academy" target="_blank">Mangata Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/DP/">DP</a></div><div class="post_share"><div class="social-share" data-image="/img/back/12.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/Inkedreward_LI.jpg" target="_blank"><img class="post-qr-code-img" src="/img/Inkedreward_LI.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/09/02/DP-oVML/"><img class="next-cover" src="/img/back/6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">DP-oVML</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/09/02/DP-oVML/" title="DP-oVML"><img class="cover" src="/img/back/6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-02</div><div class="title">DP-oVML</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/favicon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">rm-rf /*</div><div class="author-info__description">最大似然估计：所有已经发生的，都是最应该发生的</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Mangata1"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">contract author :You can leave a message on the messageboard, I will check it!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Differential-Privacy"><span class="toc-number">1.</span> <span class="toc-text">Differential Privacy</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E8%B5%84%E6%96%99"><span class="toc-number">1.1.</span> <span class="toc-text">视频资料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B"><span class="toc-number">1.2.</span> <span class="toc-text">课程</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/09/03/DP-Learning-Materials/" title="DP Learning Materials"><img src="/img/back/12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DP Learning Materials"/></a><div class="content"><a class="title" href="/2021/09/03/DP-Learning-Materials/" title="DP Learning Materials">DP Learning Materials</a><time datetime="2021-09-03T02:11:32.000Z" title="发表于 2021-09-03 10:11:32">2021-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/02/DP-oVML/" title="DP-oVML"><img src="/img/back/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DP-oVML"/></a><div class="content"><a class="title" href="/2021/09/02/DP-oVML/" title="DP-oVML">DP-oVML</a><time datetime="2021-09-02T15:09:52.000Z" title="发表于 2021-09-02 23:09:52">2021-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/02/Practical-Secure-Aggregation-for-Privacy-Preserving-Machine-Learning/" title="Practical Secure Aggregation for Privacy-Preserving Machine Learning"><img src="/img/back/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Practical Secure Aggregation for Privacy-Preserving Machine Learning"/></a><div class="content"><a class="title" href="/2021/09/02/Practical-Secure-Aggregation-for-Privacy-Preserving-Machine-Learning/" title="Practical Secure Aggregation for Privacy-Preserving Machine Learning">Practical Secure Aggregation for Privacy-Preserving Machine Learning</a><time datetime="2021-09-02T14:40:30.183Z" title="发表于 2021-09-02 22:40:30">2021-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/01/Advances-and-Open-Problems-in-Federated-Learning/" title="Advances and Open Problems in Federated Learning"><img src="/img/back/20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Advances and Open Problems in Federated Learning"/></a><div class="content"><a class="title" href="/2021/06/01/Advances-and-Open-Problems-in-Federated-Learning/" title="Advances and Open Problems in Federated Learning">Advances and Open Problems in Federated Learning</a><time datetime="2021-06-01T12:47:44.000Z" title="发表于 2021-06-01 20:47:44">2021-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/09/DeepPath-A-Reforcement-Learning-Method-for-Knowledge-Graph-Reasoning/" title="DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning"><img src="/img/back/18.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning"/></a><div class="content"><a class="title" href="/2021/05/09/DeepPath-A-Reforcement-Learning-Method-for-Knowledge-Graph-Reasoning/" title="DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning">DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning</a><time datetime="2021-05-09T07:17:45.000Z" title="发表于 2021-05-09 15:17:45">2021-05-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/back/12.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 By rm-rf /*</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://github.com/Mangata1">Mangata</a><span class="footer-separator">| rm-rf/*</span></div><div class="footer_custom_text">Hi welcome to my blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'DFUYeodUdvR7okd79UcGgqdI-gzGzoHsz',
+      appKey: 'SJ5iMHkmpY4kEQ4LHpI9LprE',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script type="text/javascript" src="/js/fairyDustCursor.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
