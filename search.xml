@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ML-2 Derive</title>
+      <link href="/2021/09/24/ML-2-Derive/"/>
+      <url>/2021/09/24/ML-2-Derive/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Machine-Learning-Derive"><a href="#Machine-Learning-Derive" class="headerlink" title="Machine Learning - Derive"></a>Machine Learning - Derive</h1><p><a href="https://www.bilibili.com/video/BV1aE411o7qd?p=1">ref</a></p><h2 id="1-资料介绍"><a href="#1-资料介绍" class="headerlink" title="1. 资料介绍"></a>1. 资料介绍</h2><h3 id="1-1-书籍"><a href="#1-1-书籍" class="headerlink" title="1.1 书籍"></a>1.1 书籍</h3><p>李航 统计学习方法  频率派 统计机器学习</p><p>PRML 模式识别与机器学习 贝叶斯派 概率图模型</p><h2 id="2-频率派-VS-贝叶斯派"><a href="#2-频率派-VS-贝叶斯派" class="headerlink" title="2. 频率派 VS 贝叶斯派"></a>2. 频率派 VS 贝叶斯派</h2><p><img src="/2021/09/24/ML-2-Derive/image-20210924100942759.png" alt="image-20210924100942759"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ML</title>
       <link href="/2021/09/04/ML/"/>
       <url>/2021/09/04/ML/</url>
